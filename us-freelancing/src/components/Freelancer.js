@@ -5,7 +5,10 @@ export default class Freelancer extends Component {
     render() {
 
         return (
-            null
+            <div>
+                <img></img>
+                <h2></h2>
+            </div>
         )
     }
 }
