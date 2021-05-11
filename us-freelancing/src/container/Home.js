@@ -1,12 +1,15 @@
 import React, {Component} from 'react'
-import {Route, Switch, Link} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Login from '../components/Login'
 import Navbar from '../components/Navbar'
 import FreelancerBoard from './FreelancerBoard'
 import JobBoard from './JobBoard'
 
 
+
 export default class Home extends Component {
+
+ 
 
     render() {
 
@@ -17,7 +20,7 @@ export default class Home extends Component {
               {/* <Login /> */}
               <Switch>
 
-                <Route exact path="/FreelancerBoard" component={FreelancerBoard} />
+                <Route exact path="/FreelancerBoard"  component={FreelancerBoard} />
                 <Route exact path="/JobBoard" component={JobBoard}/>
 
               </Switch>
