@@ -1,16 +1,19 @@
-import React, {Component} from "react"
 
-export default class Freelancer extends Component {
+import {Image} from 'react-bootstrap'
 
-    
-    render() {
-        const {name,image} = this.props.freelancer
 
-        return (
-            <div>
-                <img src={image}/>
-                <h2>{name}</h2>
-            </div>
-        )
-    }
+
+export const Freelancer = ({ freelancer, showDetails  }) => {
+    const {name,image} = freelancer
+
+
+    return (
+        <div onClick={() => showDetails(freelancer)}>
+            <Image className="image" src={image} alt="freelancer" rounded />
+            <h2>{name}</h2>
+        </div>
+        
+    )
 }
+
+

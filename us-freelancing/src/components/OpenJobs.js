@@ -5,7 +5,7 @@ export default class OpenJobs extends Component {
     render() {
 
         return(
-        <table>
+        <table className="table table-hover">
             <tbody>
                 <tr>
                     <th>
@@ -18,7 +18,7 @@ export default class OpenJobs extends Component {
                         <h3>Category</h3>
                     </th>
                     <th>
-                        <h3></h3>
+                        <h3>Description</h3>
                     </th>
                 </tr>
         {/* Data goes here */}

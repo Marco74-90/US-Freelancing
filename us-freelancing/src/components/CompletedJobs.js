@@ -6,7 +6,7 @@ export default class CompletedJobs extends Component {
 
         return(
 
-        <table>
+        <table className="table table-hover">
             <tbody>
                 <tr>
                     <th>

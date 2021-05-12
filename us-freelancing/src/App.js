@@ -1,5 +1,5 @@
 
-import './App.css';
+import './style/App.css';
 import {Route, Switch} from 'react-router-dom'
 import Home from './container/Home'
 

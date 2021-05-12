@@ -6,7 +6,11 @@ import FreelancerBoard from './FreelancerBoard'
 import JobBoard from './JobBoard'
 
 
-export default class Home extends Component {
+export default class Home extends Component { 
+
+  state = {
+    jobs:{}
+  }
 
     render() {
 
