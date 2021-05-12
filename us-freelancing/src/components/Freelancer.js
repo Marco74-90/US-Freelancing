@@ -1,13 +1,15 @@
 import React, {Component} from "react"
 
 export default class Freelancer extends Component {
-  
+
+    
     render() {
-        
+        const {name,image} = this.props.freelancer
 
         return (
             <div>
-                <h2>Hello</h2>
+                <img src={image}/>
+                <h2>{name}</h2>
             </div>
         )
     }
