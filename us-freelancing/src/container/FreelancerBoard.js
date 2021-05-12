@@ -8,6 +8,7 @@ export default class FreelancerBoard extends Component {
 
     state = {
         freelancers: [],
+        details: {}
         
     
     }
@@ -24,6 +25,8 @@ export default class FreelancerBoard extends Component {
     }
 
     render() {
+        console.log(this.state);
+        // console.log(this.state.freelancers)
         return(
             <div>
                 <div className="left">
@@ -31,7 +34,6 @@ export default class FreelancerBoard extends Component {
                 </div>
                 <div className="left">
                     <Details details={this.state.details}/>
-                    <p>Hello world</p>
                 </div>
             </div>
         )

@@ -10,7 +10,6 @@ export default class JobBoard extends Component {
             <div>
                <div>
                    <CompletedJobs/>
-                   <p>hello world</p>
                </div>
                <div>
                    <OpenJobs/>

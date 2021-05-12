@@ -4,6 +4,7 @@ import Login from '../components/Login'
 import Navbar from '../components/Navbar'
 import FreelancerBoard from './FreelancerBoard'
 import JobBoard from './JobBoard'
+import PostJob from '../components/PostJob'
 
 
 export default class Home extends Component { 
@@ -23,6 +24,7 @@ export default class Home extends Component {
 
                 <Route exact path="/FreelancerBoard"  component={FreelancerBoard} />
                 <Route exact path="/JobBoard" component={JobBoard}/>
+                <Route exact path="/PostJob" component={PostJob}/>
 
               </Switch>
             </div>
