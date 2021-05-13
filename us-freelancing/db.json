@@ -175,6 +175,24 @@
       "job": "Plumbing",
       "description": "Burger",
       "freelancerId": "4"
+    },
+    {
+      "id": 3,
+      "dateRequested": "2021-05-29",
+      "name": "Veronica Weasley",
+      "job": "Oil Change",
+      "description": "12 hours shift work with bonus",
+      "freelancerId": "10"
+    }
+  ],
+  "completedJobs": [
+    {
+      "id": 1,
+      "name": "Fake",
+      "job": "Plumbing",
+      "rate": [0,0,0,0,0],
+      "review": "*****",
+      "freelancerId": "2"
     }
   ]
 }
