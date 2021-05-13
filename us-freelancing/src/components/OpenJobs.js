@@ -1,8 +1,18 @@
 import React, {Component} from 'react'
 import Job from './Job'
+const Url = "http://localhost:3000/openJobs/";
 
 export default class OpenJobs extends Component {
+    
+    state = {
+        openJobs: []
+    }
 
+    componentDidMount() {
+        fetch(Url)
+        .then(res => res.json())
+        .then(jobs => this.setState({openJobs: jobs}))
+    }
     render() {
 
         return(
@@ -22,7 +32,7 @@ export default class OpenJobs extends Component {
                         <h3>Description</h3>
                     </th>
                 </tr>
-        {this.props.openJobs.map((job) => <Job key={job.id} job={job} />)}
+                    {this.state.openJobs.map((job, index) => <Job key={index} job={job}/>)}
             </tbody>
         </table>
         )

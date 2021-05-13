@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
+import PostJob from './PostJob';
 
 export default class Details extends Component {
 
@@ -38,7 +39,7 @@ export default class Details extends Component {
                         {/* <Link to="/PostJob" ><button onClick={console.log(id)}>Hire Me!</button></Link> */}
                         
                         {/* <Link to={{pathname:"/PostJob", objectId:{id: id }}}><button >Hire Me!</button></Link> */}
-                        <a href={`/PostJob/${id}`}><button >Hire Me!</button></a>
+                        <a href={`/PostJob/${id}`}><button>Hire Me!</button></a>
                         {/* <Link to={`/PostJob/${id}`}><button >Hire Me!</button></Link> */}
                     </div>
                 </div>
