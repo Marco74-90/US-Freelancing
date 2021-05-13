@@ -9,13 +9,13 @@ export default class OpenJobs extends Component {
             <tbody>
                 <tr>
                     <th>
+                        <h3>Date requested</h3>
+                    </th>
+                    <th>
                         <h3>Name</h3>
                     </th>
                     <th>
                         <h3>Job</h3>
-                    </th>
-                    <th>
-                        <h3>Category</h3>
                     </th>
                     <th>
                         <h3>Description</h3>
