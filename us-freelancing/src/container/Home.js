@@ -25,7 +25,7 @@ export default class Home extends Component {
 
                 <Route exact path="/FreelancerBoard"  component={FreelancerBoard} />
                 <Route exact path="/JobBoard" component={JobBoard}/>
-                <Route exact path="/PostJob" component={PostJob} />
+                <Route exact path="/PostJob/:id" component={PostJob} />
                 {/* <Route path="/PostJob/:id" render={()=> <PostJob jobState={this.state} />} /> */}
 
               </Switch>
