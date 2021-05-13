@@ -29,10 +29,10 @@ export default class FreelancerBoard extends Component {
         // console.log(this.state.freelancers)
         return(
             <div>
-                <div className="left">
+                <div className="freelancerBoard">
                     {this.state.freelancers.map((freelancer) => <Freelancer showDetails={this.showDetails} key={freelancer.id} freelancer={freelancer}/>)}
                 </div>
-                <div className="left">
+                <div className="freelancerBoard">
                     <Details details={this.state.details}/>
                 </div>
             </div>

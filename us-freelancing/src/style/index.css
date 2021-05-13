@@ -16,6 +16,14 @@ code {
   height:200px;
 }
 
+.freelancerBoard {
+ float: left;
+}
+
+#openJobs {
+  float: left;
+}
+
 /*!
  * Bootswatch v5.0.0
  * Homepage: https://bootswatch.com

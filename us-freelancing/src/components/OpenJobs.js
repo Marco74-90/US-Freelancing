@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
+import Job from './Job'
 
 export default class OpenJobs extends Component {
 
     render() {
 
         return(
-        <table className="table table-hover">
+        <table id="openJobs" className="table table-hover">
             <tbody>
                 <tr>
                     <th>
@@ -21,7 +22,7 @@ export default class OpenJobs extends Component {
                         <h3>Description</h3>
                     </th>
                 </tr>
-        {/* Data goes here */}
+        {this.props.openJobs.map((job) => <Job key={job.id} job={job} />)}
             </tbody>
         </table>
         )
