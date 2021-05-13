@@ -25,7 +25,8 @@ export default class JobBoard extends Component {
                    <CompletedJobs/>
                </div>
                <div>
-                   <OpenJobs openJobs={this.state.openJobs}/>
+                   {/* <OpenJobs openJobs={this.state.openJobs}/> */}
+                   <OpenJobs />
                </div>
             </div>
 

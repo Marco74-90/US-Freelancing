@@ -153,28 +153,46 @@
   ],
   "openJobs": [
     {
+      "id": 0,
+      "dateRequested": "",
+      "name": "",
+      "job": "",
+      "description": "",
+      "freelancerId": ""
+    },
+    {
       "id": 1,
       "dateRequested": "2021-05-22",
-      "name": "thesurvivor",
-      "job": "Plumbing",
-      "description": "Kim",
+      "name": "Jennifer West",
+      "job": "Oil Change",
+      "description": "Buble",
       "freelancerId": "2"
     },
     {
       "id": 2,
-      "dateRequested": "2021-05-29",
-      "name": "Jackson",
+      "dateRequested": "2021-05-28",
+      "name": "Amanda Smith",
       "job": "Plumbing",
-      "description": "Buble",
-      "freelancerId": "3"
+      "description": "Burger",
+      "freelancerId": "4"
     },
     {
       "id": 3,
-      "dateRequested": "2021-05-15",
-      "name": "Tina",
+      "dateRequested": "2021-05-29",
+      "name": "Veronica Weasley",
       "job": "Oil Change",
-      "description": "Track needs oil change 2 hours of work",
-      "freelancerId": "4"
+      "description": "12 hours shift work with bonus",
+      "freelancerId": "10"
+    }
+  ],
+  "completedJobs": [
+    {
+      "id": 1,
+      "name": "Fake",
+      "job": "Plumbing",
+      "rate": [0,0,0,0,0],
+      "review": "*****",
+      "freelancerId": "2"
     }
   ]
 }
