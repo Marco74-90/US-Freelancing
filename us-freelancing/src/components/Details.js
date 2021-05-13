@@ -35,7 +35,11 @@ export default class Details extends Component {
                         <li className="list-group-item">{rate}</li>
                     </ul>
                     <div className="card-body" >
-                        <Link to="/PostJob" ><button onClick={console.log(id)}>Hire Me!</button></Link>
+                        {/* <Link to="/PostJob" ><button onClick={console.log(id)}>Hire Me!</button></Link> */}
+                        
+                        {/* <Link to={{pathname:"/PostJob", objectId:{id: id }}}><button >Hire Me!</button></Link> */}
+                        <a href={`/PostJob/${id}`}><button >Hire Me!</button></a>
+                        {/* <Link to={`/PostJob/${id}`}><button >Hire Me!</button></Link> */}
                     </div>
                 </div>
             </div>

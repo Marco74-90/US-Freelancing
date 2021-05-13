@@ -10,11 +10,12 @@ import PostJob from '../components/PostJob'
 export default class Home extends Component { 
 
   state = {
-    jobs:{}
+    jobs:{},
+    jobList: []
   }
 
     render() {
-
+      
         return(
             <div>
               <header>Hello World!</header>
@@ -24,7 +25,8 @@ export default class Home extends Component {
 
                 <Route exact path="/FreelancerBoard"  component={FreelancerBoard} />
                 <Route exact path="/JobBoard" component={JobBoard}/>
-                <Route exact path="/PostJob" component={PostJob}/>
+                <Route exact path="/PostJob" component={PostJob} />
+                {/* <Route path="/PostJob/:id" render={()=> <PostJob jobState={this.state} />} /> */}
 
               </Switch>
             </div>
