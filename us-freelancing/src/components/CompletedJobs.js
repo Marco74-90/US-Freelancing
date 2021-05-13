@@ -1,6 +1,21 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import ComJob from './ComJob';
 
 export default class CompletedJobs extends Component {
+
+    state = {
+        completedJobs: []
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:3000/completedJobs")
+        .then(r => r.json())
+        .then(data => {
+            this.setState({
+                completedJobs: data
+            });
+        });
+    }
 
     render() {
 
@@ -22,7 +37,9 @@ export default class CompletedJobs extends Component {
                         <h3>review</h3>
                     </th>
                 </tr>
-        {/* Data goes here  */}
+                    {
+                        this.state.completedJobs.map((job) => <ComJob key={job.id} job={job} /> )
+                    }
             </tbody>
         </table>
         )
