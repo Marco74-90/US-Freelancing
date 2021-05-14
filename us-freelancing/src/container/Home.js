@@ -1,34 +1,19 @@
 import React, {Component} from 'react'
-import {Route, Switch} from 'react-router-dom'
-
-import Navbar from '../components/Navbar'
-import FreelancerBoard from './FreelancerBoard'
-import JobBoard from './JobBoard'
-import PostJob from '../components/PostJob'
+import {Image} from 'react-bootstrap'
 
 
-export default class Home extends Component { 
 
-  state = {
-    jobs:{},
-    jobList: []
+
+export default class Home extends Component {
+
+  render() {
+
+    return (
+        <div className="Home">
+           <h1>Welcome</h1>
+           <Image src="https://previews.123rf.com/images/tynyuk/tynyuk1701/tynyuk170100405/69938800-labor-day-a-group-of-people-of-different-professions-on-a-white-background-vector-illustration-in-a-.jpg"rounded/>
+           <h2>We are here to help with any job</h2>  
+        </div>
+    )
   }
-
-    render() {
-      
-        return(
-            <div>
-              <header></header>
-              <Navbar />
-              <Switch>
-
-                <Route exact path="/FreelancerBoard"  component={FreelancerBoard} />
-                <Route exact path="/JobBoard" component={JobBoard}/>
-                <Route exact path="/PostJob/:id" component={PostJob} />
-                {/* <Route path="/PostJob/:id" render={()=> <PostJob jobState={this.state} />} /> */}
-
-              </Switch>
-            </div>
-        )
-    }
 }

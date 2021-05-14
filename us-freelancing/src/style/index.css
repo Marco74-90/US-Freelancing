@@ -5,11 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black
+}
+
+ div.Home {
+  background-color: #325288
 }
 
 .image {
@@ -20,8 +33,28 @@ code {
  float: left;
 }
 
-#openJobs {
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+ul li {
   float: left;
+  margin: 0 20px;
+ 
+}
+
+.table tr {
+  color:#000
+}
+
+
+
+
+.navbar button {
+  padding: 10px;
+  margin: 10px;
+  
+  
 }
 
 /*!
