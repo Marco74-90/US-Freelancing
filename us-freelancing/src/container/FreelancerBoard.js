@@ -26,13 +26,12 @@ export default class FreelancerBoard extends Component {
 
     render() {
         console.log(this.state);
-        // console.log(this.state.freelancers)
         return(
             <div>
                 <div className="freelancerBoard">
                     {this.state.freelancers.map((freelancer) => <Freelancer showDetails={this.showDetails} key={freelancer.id} freelancer={freelancer}/>)}
                 </div>
-                <div className="freelancerBoard">
+                <div className="Details">
                     <Details details={this.state.details}/>
                 </div>
             </div>

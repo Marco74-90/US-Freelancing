@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-color: #325288
 }
 
 code {
@@ -31,6 +31,33 @@ h2 {
 
 .freelancerBoard {
  float: left;
+ overflow: auto;
+ height: 650px;
+ background-color: #325288;
+}
+
+h3.card-header{
+  background-color: #114e60;
+  color: black
+}
+
+div.card-image {
+  background-color: #f4eee8;
+}
+div.card-body {
+  background-color: #f4eee8;
+}
+
+us.list-group.list-group-flush {
+  background-color: #f4eee8;
+}
+
+li.list-group-item {
+  background-color: #f4eee8;
+}
+
+.table  {
+  font-weight: bold;
 }
 
 ul {
@@ -45,6 +72,10 @@ ul li {
 
 .table tr {
   color:#000
+}
+
+.form {
+  color: black
 }
 
 

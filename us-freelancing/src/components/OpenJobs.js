@@ -33,7 +33,7 @@ export default class OpenJobs extends Component {
                                 <h3>Description</h3>
                             </th>
                         </tr>
-                      {this.state.openJobs.map((job, index) => <Job key={index} job={job}/>)}
+                      {this.state.openJobs.map((job) => <Job key={job.id} job={job}/>)}
                     </tbody>
                 </table>
             </div>

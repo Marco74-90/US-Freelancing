@@ -8,10 +8,9 @@ export default class Job extends Component {
     completeJob = () => {
 
         const newObj = {
-            dateRequested: this.props.job.dateRequested,
             name: this.props.job.name,
             job: this.props.job.job,
-            description: this.props.job.description 
+            rate: this.props.job.rate 
         }
 
          const reqObj = {}
@@ -28,7 +27,7 @@ export default class Job extends Component {
 
     render() {
 
-        const {dateRequested, name, job, description, id} = this.props.job
+        const {dateRequested, name, job, description, id, } = this.props.job
 
 
         return(
